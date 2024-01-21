@@ -1,8 +1,8 @@
 import express, { Express } from "express";
 import dotenv from "dotenv";
 import chalk from "chalk";
-import { UserRoute, homeRoute } from "../src/routes";
-import connectToDatabase from "../src/utils/dbConnection";
+import { UserRoute, homeRoute } from "./src/routes";
+import connectToDatabase from "./src/utils/dbConnection";
 import http from "http";
 import { Server, Socket } from "socket.io";
 
