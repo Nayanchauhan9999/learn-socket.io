@@ -1,9 +1,10 @@
 {
+  "name": "learn-socket.io",
   "version": 2,
   "builds": [
     {
-      "src": "tsconfig.json",
-      "use": "@now/node-ts"
+      "src": "*.js",
+      "use": "@vercel/node"
     }
   ],
   "routes": [
@@ -11,5 +12,8 @@
       "src": "/(.*)",
       "dest": "/dist/app.js"
     }
-  ]
+  ],
+  "buildCommand": "yarn build",
+  "installCommand": "yarn install",
+  "outputDirectory": "dist"
 }
